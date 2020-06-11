@@ -23,9 +23,6 @@ class HomeViewModel {
     func loadImgurl() {
         DataService.shared.getInfo { infos in
             if let infos = infos{
-                for info in infos.data {
-                    print(info)
-                }
                 self.imgUrlInfos = infos.data
             }
         }
