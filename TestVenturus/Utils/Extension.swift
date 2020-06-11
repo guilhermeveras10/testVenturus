@@ -14,7 +14,7 @@ extension UIViewController {
     
     static let hud = JGProgressHUD(style: .dark)
     
-    func showLoader(_ show: Bool, withText text: String? = "Loading") {
+    func showLoader(_ show: Bool, withText text: String? = "Carregando") {
         view.endEditing(true)
         UIViewController.hud.textLabel.text = text
         
