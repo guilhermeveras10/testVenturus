@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="urO-1h-fA5">
-                                <rect key="frame" x="0.0" y="250" width="414" height="612"/>
+                                <rect key="frame" x="20" y="250" width="374" height="612"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3SE-8H-PVV">
                                     <size key="itemSize" width="128" height="128"/>
@@ -33,11 +33,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVB-am-x7e">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yVB-am-x7e">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yVB-am-x7e" firstAttribute="leading" secondItem="iFj-3x-OgR" secondAttribute="leading" id="07Z-Gr-fW0"/>
+                                                <constraint firstItem="yVB-am-x7e" firstAttribute="top" secondItem="iFj-3x-OgR" secondAttribute="top" id="1D1-V2-zio"/>
+                                                <constraint firstAttribute="trailing" secondItem="yVB-am-x7e" secondAttribute="trailing" id="Sjj-dj-tDu"/>
+                                                <constraint firstAttribute="bottom" secondItem="yVB-am-x7e" secondAttribute="bottom" id="VUh-MC-zXM"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="image" destination="yVB-am-x7e" id="mQn-xQ-SIq"/>
@@ -59,12 +64,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="urO-1h-fA5" firstAttribute="top" secondItem="MS7-FW-i71" secondAttribute="bottom" constant="8" id="3DT-JB-g45"/>
-                            <constraint firstItem="urO-1h-fA5" firstAttribute="trailing" secondItem="mJD-V0-iKM" secondAttribute="trailing" id="6Oa-vW-sBw"/>
+                            <constraint firstItem="urO-1h-fA5" firstAttribute="trailing" secondItem="mJD-V0-iKM" secondAttribute="trailing" constant="-20" id="6Oa-vW-sBw"/>
                             <constraint firstItem="MS7-FW-i71" firstAttribute="leading" secondItem="mJD-V0-iKM" secondAttribute="leading" constant="20" id="PnB-HD-Y0m"/>
                             <constraint firstItem="MS7-FW-i71" firstAttribute="top" secondItem="mJD-V0-iKM" secondAttribute="top" constant="18" id="gep-0g-raI"/>
                             <constraint firstItem="urO-1h-fA5" firstAttribute="bottom" secondItem="mJD-V0-iKM" secondAttribute="bottom" id="ggD-ty-xPO"/>
                             <constraint firstItem="mJD-V0-iKM" firstAttribute="trailing" secondItem="MS7-FW-i71" secondAttribute="trailing" constant="20" id="l5O-Jh-I7m"/>
-                            <constraint firstItem="urO-1h-fA5" firstAttribute="leading" secondItem="mJD-V0-iKM" secondAttribute="leading" id="p9v-y1-Gyx"/>
+                            <constraint firstItem="urO-1h-fA5" firstAttribute="leading" secondItem="mJD-V0-iKM" secondAttribute="leading" constant="20" id="p9v-y1-Gyx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mJD-V0-iKM"/>
                     </view>

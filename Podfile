@@ -9,5 +9,6 @@ target 'TestVenturus' do
 
 pod 'Alamofire', '~> 4.0'
 pod 'SDWebImage', '~> 5.0'
+pod 'JGProgressHUD','~>2.0.3'
 
 end
