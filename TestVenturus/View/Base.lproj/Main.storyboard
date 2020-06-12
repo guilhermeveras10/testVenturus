@@ -16,36 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="urO-1h-fA5">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="urO-1h-fA5">
                                 <rect key="frame" x="20" y="250" width="374" height="612"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3SE-8H-PVV">
-                                    <size key="itemSize" width="105" height="100"/>
+                                    <size key="itemSize" width="105" height="156"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kLh-pL-ft0" customClass="ImgurCollectionViewCell" customModule="TestVenturus" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="105" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iFj-3x-OgR">
-                                            <rect key="frame" x="0.0" y="0.0" width="105" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="156"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yVB-am-x7e">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="100"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-VY-3J9">
+                                                    <rect key="frame" x="0.0" y="108" width="105" height="48"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="yVB-am-x7e" firstAttribute="leading" secondItem="iFj-3x-OgR" secondAttribute="leading" id="07Z-Gr-fW0"/>
                                                 <constraint firstItem="yVB-am-x7e" firstAttribute="top" secondItem="iFj-3x-OgR" secondAttribute="top" id="1D1-V2-zio"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Jx-VY-3J9" secondAttribute="bottom" id="HQL-Rh-pZ6"/>
+                                                <constraint firstItem="6Jx-VY-3J9" firstAttribute="leading" secondItem="iFj-3x-OgR" secondAttribute="leading" id="KDF-7b-QPS"/>
                                                 <constraint firstAttribute="trailing" secondItem="yVB-am-x7e" secondAttribute="trailing" id="Sjj-dj-tDu"/>
-                                                <constraint firstAttribute="bottom" secondItem="yVB-am-x7e" secondAttribute="bottom" id="VUh-MC-zXM"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Jx-VY-3J9" secondAttribute="trailing" id="UIF-I4-SIo"/>
+                                                <constraint firstAttribute="bottom" secondItem="yVB-am-x7e" secondAttribute="bottom" constant="56" id="VUh-MC-zXM"/>
+                                                <constraint firstItem="6Jx-VY-3J9" firstAttribute="top" secondItem="yVB-am-x7e" secondAttribute="bottom" constant="8" id="ace-Lj-dMZ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="105" height="156"/>
                                         <connections>
                                             <outlet property="image" destination="yVB-am-x7e" id="mQn-xQ-SIq"/>
+                                            <outlet property="title" destination="6Jx-VY-3J9" id="YMP-A1-Fcc"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

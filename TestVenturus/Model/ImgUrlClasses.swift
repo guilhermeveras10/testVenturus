@@ -12,5 +12,6 @@ struct ImgUrlInfo: Codable {
     let data: [ImgUrlData]
 }
 struct ImgUrlData: Codable {
-    let link: URL?
+    let title: String
+    let cover: String
 }
