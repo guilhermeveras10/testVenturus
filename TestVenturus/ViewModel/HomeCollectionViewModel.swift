@@ -17,7 +17,7 @@ struct HomeCollectionViewModel {
     }
     
     var cover: URL? {
-        let fileUrl =  URL(string: "https://i.imgur.com/\(imgUrlInfo.cover).jpg")
+        let fileUrl =  URL(string: "https://i.imgur.com/\(imgUrlInfo.cover ?? "").jpg")
         return fileUrl
     }
     
