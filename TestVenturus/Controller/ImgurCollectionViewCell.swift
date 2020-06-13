@@ -15,6 +15,9 @@ class ImgurCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var title: UILabel!
     
     func configure(with viewModel: HomeCollectionViewModel) {
+
+        image.sd_imageIndicator = SDWebImageActivityIndicator.gray
+
         image.sd_setImage(with: viewModel
             .cover, completed: nil)
         title.text = viewModel.title
